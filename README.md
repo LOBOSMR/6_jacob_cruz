@@ -1,1 +1,0 @@
-# 6_jacob_cruz

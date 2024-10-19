@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PRACTICAS AP WEB</title>
+</head>
+<body>
+    <h1>Jacob Daniel De La Cruz Cotaquispe</h1>
+    <ul>
+        <li><a href="p2.1/textos.html">Práctica 1</a></li>
+        <li><a href="p2_2/favicon.html">Práctica 2_1</a></li>
+        <li><a href="p2.3.1">Práctica 2_3_1</a></li>
+        <li><a href="p2.3.2">Práctica 2_3_2</a></li>
+
+    </ul>
+</body>
+
+</html>
