@@ -6,14 +6,40 @@
 </head>
 
 <body>
-    <form action="file:///home/user/Descargas/plantilla_practica_form.html" method="post"></form>
-    <p>Personaje</p>
-    <div>
-        <label for="name">Superhéroe favorito</label>
-        <input type="text" id="name" name="user_name" />
+    <div class="marco">
+        <p>Personaje</p>
+        <div>
+            <label for="name">Superhéroe favorito</label>
+            <br>
+            <select id="name" name="user_name">
+                <option value="ironman">Iron Man</option>
+                <option value="hulk">The Hulk</option>
+                <option value="thor">Thor</option>
+                <option value="batman">Batman</option>
+                <option value="superman">Superman</option>
+                <option value="wonderwoman">Wonder Woman</option>
+            </select>
+            <br>
+            <label for="color-selector">Color</label>
+            <br>
+            <input type="color" id="color-selector" name="color" value="#007bff">
+            <br>
+            <div id="color-muestra"></div>
+        </div>
     </div>
-    <imput type="image" id="image" alt="Login" src="https://pngtree.com/freepng/login-button-black_5236751.html" />
-    <button type="submit">Envíe su mensaje</button>
-<button type="reset">Borra los campos</button>
-<button type="button">Programar en Javascript</button>
+    <p>Datos del Jugador</p>
+    <label for="nombre">Nombre:</label>
+    <br>
+    <input type="text" id="nombre" name="nombre">
+    <br>
+    <label for="telefono">Teléfono:</label>
+    <br>
+    <input type="tel" id="telefono" name="telefono">
+    <span>Formato: 99999999</span>
+    </div>
+    <br>
+    <br>
+    <button type="button" id="enviar">Enviar</button>
 </body>
+
+</html>
