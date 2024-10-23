@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>FORMULARIO AVANZADO</title>
+</head>
+
+<body>
+    <form id="miFormulario" action="jacobdaniel.dlcc@educa.madrid.org" method="post">
+        <div class="marco">
+            <fieldset>
+                <legend>Personaje</legend>
+                <label for="superhero">Superhéroe favorito</label>
+                <br>
+                <select id="superhero" name="superheroe" required>
+                    <option value="ironman">Iron Man</option>
+                    <option value="hulk">The Hulk</option>
+                    <option value="thor">Thor</option>
+                    <option value="" disabled selected>Elige superhéroe</option>
+                </select>
+                <br>
+                <label for="color-selector">Color</label>
+                <br>
+                <input type="color" id="color-selector" name="color" value="#007bff">
+            </fieldset>
+        </div>
+
+        <div class="marco">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="telefono">Teléfono:</label>
+                <br>
+                <input type="tel" id="telefono" name="telefono" required>
+                <span>Formato: 99999999</span>
+                <br>
+                <label for="fecha">Fecha</label>
+                <br>
+                <input type="date" name="date" />
+                <br>
+                <label for="contraseña">Contraseña:</label>
+                <br>
+                <input type="password" name="password" />
+            </fieldset>
+        </div>
+
+        <div class="marco">
+            <fieldset>
+                <legend>Selecciona forma de contacto preferida:</legend>
+                <form>
+                    <input type="radio" name="radio" />Email
+                    <input type="radio" name="radio" />Telefono
+                    <input type="radio" name="radio" />Carta
+                </form>
+            </fieldset>
+        </div>
+
+        <div class="marco">
+            <fieldset>
+                <legend>Elige tus asignaturas fravoritas</legend>
+                <form>
+                    <input type="checkbox" name="asignaturas" value="web" />
+                    <span>Aplicaciones web</span>
+                    <br>
+                    <input type="checkbox" name="asignaturas" value="seguridad" />
+                    <span>Seguridad informática</span>
+                    <br>
+                    <input type="checkbox" name="asignaturas" value="general" />
+                    <span>Todas</span>
+                    <br>
+                    <input type="checkbox" name="asignaturas" value="general" />
+                    <span>Ninguna</span>
+                    <br>
+                    <input type="checkbox" name="asignaturas" value="general" />
+                    <span>Solo HTML</span>
+                </form>
+            </fieldset>
+        </div>
+
+        <div class="marco">
+            <fieldset>
+                <legend>Puntuación al para HTML</legend>
+                <form>
+                    <input type="range" id="range" min="0" max="10" />
+                    <br>
+                    <label for="sugerencias">Sugerencias</label>
+                    <br>
+                    <br>
+                    <input type="file" accept="image/*, text/*" name="file" />
+                    <option value="" disabled selected>Enviar captura de la sugerencia</option>
+                    <br>
+                    <label for="fecha">Fecha del Reclamo</label>
+                    <br>
+                    <input type="month" name="month" />
+                    <br>
+                    <br>
+                    <label for="hour">Hora del Suceso</label>
+                    <br>
+                    <input type="time" name="time" />
+                    <br>
+                    <br>
+                    <label for="Zonahoraria">Zona horaria (OPCIONAL)</label>
+                    <br>
+                    <input type="datetiem" name="datetiem" />
+
+                </form>
+            </fieldset>
+        </div>
+        <br>
+        <form>
+            <input type="submit" value="Enviar" />
+            <input type="submit" value="Resetear" />
+        </form>
+    </form>
+</body>
+
+</html>
