@@ -3,6 +3,26 @@
 
 <head>
     <title>FORMULARIO</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type=radio]+label,
+        input[type=checkbox]+label {
+            display: inline;
+        }
+
+        input[type=submit] {
+            display: inline;
+            margin-right: 10px;
+            margin-top: 15px;
+            color: white;
+            border-radius: 10px;
+            background-color: rgb(79, 60, 96);
+        }
+    </style>
 </head>
 
 <body>
@@ -13,17 +33,14 @@
             <fieldset>
                 <legend>Personaje</legend>
                 <label for="superhero">Superhéroe favorito</label>
-
-                <br>
                 <select id="superhero" name="superheroe" required>
+                    <option value="" disabled selected>Elige superhéroe</option>
                     <option value="ironman">Iron Man</option>
                     <option value="hulk">The Hulk</option>
                     <option value="thor">Thor</option>
-                    <option value="" disabled selected>Elige superhéroe</option>
                 </select>
                 <br>
                 <label for="color-selector">Color</label>
-                <br>
                 <input type="color" id="color-selector" name="color" value="#007bff">
             </fieldset>
         </div>
@@ -32,16 +49,13 @@
             <fieldset>
                 <legend>Datos de contacto</legend>
                 <label for="nombre">Nombre:</label>
-                <br>
                 <input type="text" id="nombre" name="nombre" required>
-                <br>
                 <label for="telefono">Teléfono:</label>
-                <br>
                 <input type="tel" id="telefono" name="telefono" required>
                 <span>Formato: 99999999</span>
             </fieldset>
         </div>
-        <br>
+        
         <input type="submit" value="Enviar">
     </form>
 </body>
