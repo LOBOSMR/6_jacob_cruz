@@ -3,6 +3,40 @@
 
 <head>
     <title>FORMULARIO AVANZADO</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type=radio]+label,
+        input[type=checkbox]+label {
+            display: inline;
+        }
+
+        input[type=submit],
+        button[type=submit],
+        button[type=reset] {
+            display: inline;
+            margin-right: 10px;
+            margin-top: 15px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        input[type=submit],
+        button[type=submit] {
+            background-color: rgb(79, 60, 96);
+        }
+
+        button[type=reset] {
+            background-color: rgb(196, 76, 20);
+        }
+
+        *:required {
+            border-color: gold;
+        }
+    </style>
 </head>
 
 <body>
@@ -11,16 +45,13 @@
             <fieldset>
                 <legend>Personaje</legend>
                 <label for="superhero">Superhéroe favorito</label>
-                <br>
                 <select id="superhero" name="superheroe" required>
+                    <option value="" disabled selected>Elige superhéroe</option>
                     <option value="ironman">Iron Man</option>
                     <option value="hulk">The Hulk</option>
                     <option value="thor">Thor</option>
-                    <option value="" disabled selected>Elige superhéroe</option>
                 </select>
-                <br>
                 <label for="color-selector">Color</label>
-                <br>
                 <input type="color" id="color-selector" name="color" value="#007bff">
             </fieldset>
         </div>
@@ -29,20 +60,13 @@
             <fieldset>
                 <legend>Datos de contacto</legend>
                 <label for="nombre">Nombre:</label>
-                <br>
                 <input type="text" id="nombre" name="nombre" required>
-                <br>
                 <label for="telefono">Teléfono:</label>
-                <br>
                 <input type="tel" id="telefono" name="telefono" required>
                 <span>Formato: 99999999</span>
-                <br>
                 <label for="fecha">Fecha</label>
-                <br>
                 <input type="date" name="date" />
-                <br>
                 <label for="contraseña">Contraseña:</label>
-                <br>
                 <input type="password" name="password" />
             </fieldset>
         </div>
@@ -50,70 +74,50 @@
         <div class="marco">
             <fieldset>
                 <legend>Selecciona forma de contacto preferida:</legend>
-                <form>
-                    <input type="radio" name="radio" />Email
-                    <input type="radio" name="radio" />Telefono
-                    <input type="radio" name="radio" />Carta
-                </form>
+                <input type="radio" name="radio" id="contact-email" value="email" />
+                <label for="contact-email">Email</label>
+                <input type="radio" name="radio" id="contact-telefono" value="telefono" />
+                <label for="contact-telefono">Teléfono</label>
+                <input type="radio" name="radio" id="contact-carta" value="carta" />
+                <label for="contact-carta">Carta</label>
             </fieldset>
         </div>
 
         <div class="marco">
             <fieldset>
-                <legend>Elige tus asignaturas fravoritas</legend>
-                <form>
-                    <input type="checkbox" name="asignaturas" value="web" />
-                    <span>Aplicaciones web</span>
-                    <br>
-                    <input type="checkbox" name="asignaturas" value="seguridad" />
-                    <span>Seguridad informática</span>
-                    <br>
-                    <input type="checkbox" name="asignaturas" value="general" />
-                    <span>Todas</span>
-                    <br>
-                    <input type="checkbox" name="asignaturas" value="general" />
-                    <span>Ninguna</span>
-                    <br>
-                    <input type="checkbox" name="asignaturas" value="general" />
-                    <span>Solo HTML</span>
-                </form>
+                <legend>Elige tus asignaturas favoritas</legend>
+                <input type="checkbox" name="asignaturas" value="web" id="asignaturas-web" />
+                <label for="asignaturas-web">Aplicaciones web</label><br>
+                <input type="checkbox" name="asignaturas" value="seguridad" id="asignaturas-seguridad" />
+                <label for="asignaturas-seguridad">Seguridad informática</label><br>
+                <input type="checkbox" name="asignaturas" value="todas" id="asignaturas-todas" />
+                <label for="asignaturas-todas">Todas</label><br>
+                <input type="checkbox" name="asignaturas" value="ninguna" id="asignaturas-ninguna" />
+                <label for="asignaturas-ninguna">Ninguna</label><br>
+                <input type="checkbox" name="asignaturas" value="html" id="asignaturas-html" />
+                <label for="asignaturas-html">Solo HTML</label>
             </fieldset>
         </div>
 
         <div class="marco">
             <fieldset>
-                <legend>Puntuación al para HTML</legend>
-                <form>
-                    <input type="range" id="range" min="0" max="10" />
-                    <br>
-                    <label for="sugerencias">Sugerencias</label>
-                    <br>
-                    <br>
-                    <input type="file" accept="image/*, text/*" name="file" />
-                    <option value="" disabled selected>Enviar captura de la sugerencia</option>
-                    <br>
-                    <label for="fecha">Fecha del Reclamo</label>
-                    <br>
-                    <input type="month" name="month" />
-                    <br>
-                    <br>
-                    <label for="hour">Hora del Suceso</label>
-                    <br>
-                    <input type="time" name="time" />
-                    <br>
-                    <br>
-                    <label for="Zonahoraria">Zona horaria (OPCIONAL)</label>
-                    <br>
-                    <input type="datetiem" name="datetiem" />
-
-                </form>
+                <legend>Puntuación para HTML</legend>
+                <input type="range" id="range" min="0" max="10" />
+                <label for="sugerencias">Sugerencias</label>
+                <input type="file" accept="image/*, text/*" name="file" />
+                <label for="fecha-reclamo">Fecha del Reclamo</label>
+                <input type="month" name="month" />
+                <label for="hora-sucesos">Hora del Suceso</label>
+                <input type="time" name="time" />
+                <label for="zonahoraria">Zona horaria (OPCIONAL)</label>
+                <input type="datetime" name="datetime" />
             </fieldset>
         </div>
-        <br>
-        <form>
+
+        <div>
             <input type="submit" value="Enviar" />
-            <input type="submit" value="Resetear" />
-        </form>
+            <button type="reset">Resetear</button>
+        </div>
     </form>
 </body>
 
