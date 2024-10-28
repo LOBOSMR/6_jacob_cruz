@@ -1,91 +1,99 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="no-js">
 
 <head>
+    <meta charset="utf-8">
     <title>HTML5</title>
+    <meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            background-color: green;
+        }
+
+        nav {
+            background-color: rgb(103, 135, 103);
+        }
+
+        section {
+            background-color: pink;
+        }
+
+        article {
+            background-color: palevioletred;
+        }
+
+        footer {
+            background-color: gray;
+        }
+
+        aside {
+            background-color: purple;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <div id="verde" style="background-color: rgb(25, 124, 25);">
-            <img src="/p2.6/mariposa.jpg" alt="logotipo" width="60" height="60"> HTML5 Layout
-            <div id="verde" style="background-color: rgb(66, 116, 91);">
-                <nav>
-                    <ul>
-                        <li><a href="#" style="color: blue;">Home</a></li>
-                        <li><a href="#" style="color: blue;">Menu 1</a></li>
-                        <li><a href="#" style="color: blue;">Menu 2</a></li>
-                        <li><a href="#" style="color: blue;">Menu 3</a></li>
-                        <li><a href="#" style="color: blue;">Menu 4</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div id="logo">
+            <img src="/p2.6/mariposa.jpg" height="50px">
+            HTML5 Layout
         </div>
-
-        <div id="rosado" style="background-color: pink;">
-            <p>Ejemplo de página HTML5 con elementos: header, nav, section, main, article, aside, footer, address.</p>
-        </div>
-        <div id="rosado" style="background-color: pink;">
-            <section>
-                <div id="rosado" style="background-color: rgb(226, 60, 148);">
-                    <h2>Título artículo 1</h2>
-                    <p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum
-                        vix
-                        ut.
-                        Dolores consequuntur in ius, sale electram dissentiunt quo te. Cu duo omnes invidunt, eos eu
-                        mucius
-                        fabellas. Stet facilis ius te, cuando voluptatibus eos in. Ad vix mundi alterum, integre
-                        urbanitas
-                        intellegam vix in.</p>
-                </div>
-
-                <div id="rosado" style="background-color: rgb(226, 60, 148);">
-                    <h2>Título artículo 2</h2>
-                    <p>Eum facete intellegat ei, ut mazim melius usu. Has elit simul primis ne. regione minimum id cum.
-                        Sea
-                        deleniti dissentiet ea. Illud mollis moderatius ut per, at qui ubique populo. Eum ad cibo
-                        legimus,
-                        vim
-                        ei quidam fastidii.</p>
-                </div>
-
-                <div id="rosado" style="background-color: rgb(226, 60, 148);">
-                    <h2>Título artículo 3</h2>
-                    <p>Quo debet vivendo ex. Qui ut admodum senserit partiendo. Id adipiscing disputando eam. sea id
-                        magna
-                        pertinax concludaturque. Ex ignota epicurei quo, his ex doctus delenit fabellas, erat timeam
-                        cotidieque
-                        sit in. Vel eu soleat voluptatibus, cum cu exerci mediocritatem. Malis legere at per, has brute
-                        putant
-                        animal et, in consul utamur usu.</p>
-                </div>
-
-                <div id="rosado" style="background-color: rgb(226, 60, 148);">
-                    <h2>Título artículo 4</h2>
-                    <p>Te has amet modo perfecto, te eum mucius conclusionemque, mel te erat deterruisset. Duo ceteros
-                        phaedrum
-                        id, ornatus postulant in sea. His at autem inani volutpat. Tollit possit in pri, platonem
-                        persecuti
-                        ad
-                        vix, vel nisl albucius gloriatur no</p>
-                </div>
-            </section>
-        </div>
-        <aside id="morado" style="background-color: purple;">
-            <span>Barra lateral 1</span><br>
-            <span>Barra lateral 2</span><br>
-            <span>Barra lateral 3</span><br>
-            <span>Barra lateral 4</span>
-        </aside>
-
-        <footer id="gris" style="background-color: grey;">
-            <p>&copy; By Jacob Daniel De La Cruz </p>
-            <address>
-                Contacto: <a href="mailto:jacobdaniel.dlcc@educa.madrid.org">Correo</a>
-            </address>
-        </footer>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a>
+                <li><a href="">Menu 1</a>
+                <li><a href="">Menu 2</a>
+                <li><a href="">Menu 3</a>
+            </ul>
+        </nav>
     </header>
+    <section>
+        <strong>Ejemplo de página HTML5 con elementos: header, nav, section, main, article, aside,
+            footer, address.</strong>
+    </section>
+    <section id="pageContent">
+        <main role="main">
+            <article>
+                <h2>Título artículo 1</h2>
+                <p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum vix
+                    ut. Dolores consequuntur in ius, sale electram dissentiunt quo te. Cu duo omnes invidunt, eos eu
+                    mucius fabellas. Stet facilis ius te, quando voluptatibus eos in. Ad vix mundi alterum, integre
+                    urbanitas intellegam vix in.</p>
+            </article>
+            <article>
+                <h2>Título artículo 2</h2>
+                <p>Eum facete intellegat ei, ut mazim melius usu. Has elit simul primis ne, regione minimum id cum. Sea
+                    deleniti dissentiet ea. Illud mollis moderatius ut per, at qui ubique populo. Eum ad cibo legimus,
+                    vim ei quidam fastidii.</p>
+            </article>
+            <article>
+                <h2>Título artículo 3</h2>
+                <p>Quo debet vivendo ex. Qui ut admodum senserit partiendo. Id adipiscing disputando eam, sea id magna
+                    pertinax concludaturque. Ex ignota epicurei quo, his ex doctus delenit fabellas, erat timeam
+                    cotidieque sit in. Vel eu soleat voluptatibus, cum cu exerci mediocritatem. Malis legere at per, has
+                    brute putant animal et, in consul utamur usu</p>
+            </article>
+            <article>
+                <h2>Título artículo 4</h2>
+                <p>Te has amet modo perfecto, te eum mucius conclusionemque, mel te erat deterruisset. Duo ceteros
+                    phaedrum id, ornatus postulant in sea. His at autem inani volutpat. Tollit possit in pri, platonem
+                    persecuti ad vix, vel nisl albucius gloriatur no.</p>
+            </article>
+        </main>
+    </section>
+    <aside>
+        <div>Barra lateral 1</div>
+        <div>Barra lateral 2</div>
+        <div>Barra lateral 3</div>
+        <div>Barra lateral 4</div>
+    </aside>
+    <footer>
+        <p>&copy; ByStudent
+        <address>
+            Contacto: <a href="jacobdaniel.dlcc@educa.madrid.org">Correo</a>
+        </address>
+    </footer>
 </body>
 
 </html>

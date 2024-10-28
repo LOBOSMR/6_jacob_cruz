@@ -73,34 +73,124 @@ video {
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: transparent;
+    background: transparent
 }
 
 body {
     line-height: 1;
-    font-family: Arial, sans-serif;
+    font-family: arial;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold
+}
+
+del {
+    text-decoration: line-through
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input,
+select {
+    vertical-align: middle
+}
+
+body,
+html {
     background-color: #FFF;
 }
 
 header {
-    background: rgb(25, 124, 25);
+    background: #AEC6CF;
     padding: 20px 30px;
     max-width: 940px;
     margin: auto;
-    color: #FFF;
 }
 
 nav {
     display: inline-block;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 10px;
 }
 
 nav ul li a {
@@ -109,8 +199,7 @@ nav ul li a {
     font-size: 20px;
     text-decoration: none;
     font-weight: bold;
-    color: blue;
-    /* Mantener color azul como en el HTML */
+    color: #444;
     border-radius: 10px;
 }
 
@@ -118,25 +207,66 @@ nav ul li a:hover {
     background: #FFF;
 }
 
-#rosado {
-    background-color: rgb(226, 60, 148);
-    padding: 20px;
-    margin: 10px 0;
-    color: #FFF;
+nav ul li {
+    display: inline-block;
+    margin: 10px;
 }
 
+nav ul {
+    list-style: none;
+}
+
+#pageContent {
+    max-width: 1000px;
+    margin: auto;
+    border: none;
+}
+
+main {
+    float: left;
+    width: 60%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+}
+
+article {
+    border-bottom: 2px dotted #999;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+article p {}
+
+main section {}
+
 footer {
-    background: grey;
+    background: #AEC6CF;
     max-width: 1000px;
     margin: auto;
     clear: both;
     text-align: right;
+}
+
+footer p {
     padding: 20px;
-    color: #FFF;
 }
 
 address {
-    padding: 10px 0;
+    padding: 10px 20px 30px 10px;
+}
+
+aside>div {
+    margin: 10px auto;
+    /*background: #AEC6CF;*/
+    min-height: 100px;
 }
 
 #logo {
@@ -147,10 +277,16 @@ address {
     color: #FFF;
 }
 
+#logo img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
 body>section {
     max-width: 1000px;
     margin: auto;
-    padding: 30px 0;
+    padding: 30px 0px;
     border-bottom: 1px solid #999;
     color: #333;
 }
@@ -171,4 +307,5 @@ body>section {
         float: none;
         width: 100%;
     }
+
 }
