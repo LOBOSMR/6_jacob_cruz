@@ -6,7 +6,7 @@ caption {
     background-color: purple;
     border-radius: 13px;
     border: 5px outset;
-    border-color: grey;
+    border-color: black;
     font-family: Arial, Helvetica, sans-serif;
     padding: 2%;
     color: white;
@@ -17,32 +17,53 @@ caption {
     background-color: aqua;
     border-radius: 5px;
     border: 5px outset;
-    border-color: grey;
+    border-color: black;
     font-size: 25px;
     padding: 10px;
+}
+
+.dias:nth-child(1) {
+    background-color: white;
+    border-color: white;
+    border: 0;
+}
+
+.dias:hover {
+    background-color: chartreuse;
 }
 
 .hora {
     background-color: blue;
     border-radius: 5px;
     border: 5px outset;
-    border-color: grey;
+    border-color: black;
     color: white;
     font-size: 20px;
     padding: 2%;
+}
+
+.hora:hover {
+    background-color: darkgoldenrod;
 }
 
 .modulos {
     background-color: cornsilk;
     border-radius: 5px;
     border: 5px outset;
-    border-color: grey;
+    border-color: black;
+}
+
+.modulos:hover {
+    background-color: mediumslateblue;
 }
 
 .recreo {
     background-color: burlywood;
     border-radius: 5px;
     border: 5px outset;
-    border-color: grey;
+    border-color: black;
 }
 
+.recreo:hover {
+    background-color: chocolate;
+}
