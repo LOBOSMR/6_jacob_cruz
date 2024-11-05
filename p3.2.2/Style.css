@@ -1,0 +1,31 @@
+
+.container {
+    display: grid;
+    grid-template-rows: 20% 65% 15%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+        "header header header header"
+        "main main . asidebar"
+        "footer footer footer footer";
+    height: 100vh;
+}
+
+.container header {
+    background-color: blue;
+    grid-area: header;
+}
+
+.container main {
+    background-color: yellow;
+    grid-area: main;
+}
+
+.container aside {
+    background-color: darkolivegreen;
+    grid-area: asidebar;
+}
+
+.container footer {
+    background-color: darksalmon;
+    grid-area: footer;
+}
