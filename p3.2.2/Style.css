@@ -21,7 +21,7 @@
 }
 
 .container aside {
-    background-color: darkolivegreen;
+    background-color: green;
     grid-area: asidebar;
 }
 
