@@ -1,3 +1,13 @@
+.contenedorX {
+    background-color: black;
+    width: 1000px;
+}
+
+.yo {
+    color: white;
+    text-align: center;
+}
+
 .contenedor0 {
     text-align: center;
     width: 100px;
@@ -8,35 +18,13 @@
 }
 
 .contenedor1 {
-    border: 10px;
+    width: 920px;
     background-color: lawngreen;
     border-radius: 10px;
+    padding: 10px;
 }
 
-.cuadro0 {
-    border: 10px outset blue;
-    border-radius: 2vh;
-    background-color: skyblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 55vh;
-    height: 5vh;
-    margin-bottom: 10px;
-}
-
-.sub0 {
-    border: 10px outset blue;
-    border-radius: 2vh;
-    background-color: skyblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 55vh;
-    height: 5vh;
-    margin-bottom: 10px;
-}
-
+.cuadro0,
 .cuadro1 {
     border: 10px outset blue;
     border-radius: 2vh;
@@ -46,9 +34,11 @@
     justify-content: center;
     width: 55vh;
     height: 5vh;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
+.sub0,
 .sub1 {
     border: 10px outset blue;
     border-radius: 2vh;
@@ -59,4 +49,9 @@
     width: 55vh;
     height: 5vh;
     margin-bottom: 10px;
+}
+
+.sub-item-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
