@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    color: white;
+    padding: 2%;
+    text-align: center;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    color: white;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+h3 {
+    color: rgb(31, 31, 175);
+}
+
+h4 {
+    color: cornflowerblue;
+}
+
+#skills ul {
+    list-style: none;
+
+}
+
+#skills ul>li:before {
+    content: "►";
+    padding-right: 0.5em;
+    color: #509e98;
+}
+
+#skills .lenguages ul>li:before {
+    list-style: none;
+}
+
+.knowledge {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+section:not(:last-child) {
+    border-bottom: 1px solid grey;
+}
+
+section {
+    padding-left: 60px;
+}
+
+footer {
+    background-color: gray;
+    min-height: 100px;
+    text-align: end;
+    padding: 20px 15px;
+}
+
+.class:hover {
+    background-color: white;
+    list-style: none;
+}
