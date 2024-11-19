@@ -1,121 +1,93 @@
-/* Estilo general para el contenedor principal */
 .contenedorX {
-    background-color: #333;  /* Un fondo oscuro para destacar el contenido */
-    width: 90%;
-    max-width: 1200px;  /* Máximo de ancho para evitar que se estire demasiado */
-    margin: 0 auto;  /* Centra el contenedor */
-    padding: 20px;
-    border-radius: 10px;
+    background-color: black;
+    width: 1000px;
+    margin: 0 auto;
 }
 
-/* Estilo para el título principal */
 .yo {
     color: white;
     text-align: center;
-    font-size: 2.5em;  /* Un tamaño de fuente mayor para hacerlo más destacado */
-    margin-bottom: 30px;
 }
 
-/* Estilo para los títulos de los temas (Tema 2, Tema 3...) */
-h2 {
-    color: #f7f7f7;
-    background-color: #ffeb3b;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    margin: 15px 0;
-}
-
-/* Contenedor para cada tema */
 .contenedor0 {
     text-align: center;
-    width: 100%;
+    width: 100px;
     height: 60px;
-    border: 10px outset #444;
-    background-color: #ffeb3b;
+    border: 10px outset black;
+    background-color: orangered;
     border-radius: 10px;
-    margin-bottom: 10px;
 }
 
-/* Estilo para el contenedor de la lista principal */
 .contenedor1 {
-    width: 100%;
-    background-color: #8bc34a;
+    width: 920px;
+    background-color: lawngreen;
     border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 10px;
 }
 
-/* Estilo para cada enlace de la lista */
 .cuadro0,
-.cuadro1,
+.cuadro1 {
+    border: 10px outset blue;
+    border-radius: 2vh;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55vh;
+    height: 5vh;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.cuadro0:hover,
+.cuadro1:hover {
+    background-color: darkorange;
+}
+
 .sub0,
 .sub1 {
-    border: 5px solid #1e88e5;
-    border-radius: 10px;
-    background-color: #81d4fa;
-    display: block;
-    text-align: center;
-    padding: 15px;
-    width: 90%;
-    max-width: 600px;
-    margin: 10px auto;
-    font-size: 1.2em;
-    font-weight: bold;
+    border: 10px outset blue;
+    border-radius: 2vh;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55vh;
+    height: 5vh;
+    margin-bottom: 10px;
+    margin-left: 20px;
     text-decoration: none;
-    color: #00796b;
-    transition: all 0.3s ease-in-out;
+    color: black;
+    font-weight: normal;
 }
 
-/* Efecto hover para los enlaces */
-.cuadro0:hover,
-.cuadro1:hover,
 .sub0:hover,
 .sub1:hover {
-    background-color: #0277bd;
-    color: white;
-    transform: scale(1.05);
+    background-color: deepskyblue;
 }
 
-/* Estilo para los sub-elementos dentro de un contenedor de sub-item */
 .sub-item-container {
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-/* Lista ordenada y no ordenada */
-ol, ul {
-    padding-left: 30px;
-    margin-top: 0;
-}
-
-/* Estilo para los sub-elementos dentro de una lista */
-.sub-item-container ol[type="a"] {
-    margin-left: 20px;
-}
-
-li {
-    margin: 10px 0;
-}
-
-/* Definir el estilo para los enlaces internos */
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-/* Estilo adicional para las imágenes dentro de la lista */
-li a img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-/* Asegurarse de que la página no se vea recargada y tenga márgenes generales */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    list-style-type: none;
+}
+
+h1,
+h2 {
+    color: white;
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
 }
