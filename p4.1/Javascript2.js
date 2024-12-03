@@ -1,18 +1,20 @@
 function cambiarColor() {
     var div = document.getElementById('iddeldiv');
     var divColor = div.style.backgroundColor;
-    si(divColor == "black"){
-        div.style.backgraundColor = "pink";
-    } sinosi(divColor == "pink"){
-        div.style.backgroundColor = "blue"
-    } sino{
-        div.style.backgroundColor = "black"
+
+    if (divColor == "black") {
+        div.style.backgroundColor = "pink";
+    } else if (divColor == "pink") {
+        div.style.backgroundColor = "blue";
+    } else {
+        div.style.backgroundColor = "black";
     }
 }
-function hola() {
-    document.getElementById("iddeldiv").inneerHTML += " HOLA!";
-}
-function adios() {
-    document.getElementById("cambiarColor").innerHTML;
 
+function adios() {
+    document.getElementById("iddeldiv").innerHTML += " ADIOS!";
+}
+
+function hola() {
+    document.getElementById("iddeldiv").innerHTML += " HOLA!";
 }
